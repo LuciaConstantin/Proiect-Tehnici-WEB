@@ -1,0 +1,46 @@
+body{
+    --culoare-fundal:#E44EA0;
+    --dim-spatiere:50px;
+   padding-left: var(--dim-spatiere);
+   padding-right: var(--dim-spatiere);
+   --culoare-text-selectat: white;
+   --culoare10: white;
+   --culoare-text: black;
+   --culoare-inchisa: pink;
+   --culoare-deschisa: blue;
+   --culoare1:#4E714E;
+   --culoare2:#E4D4DD;
+   --culoare3:#73BC71;
+   --culoare4:#F0C9DB;
+   --culoare5:#C6438B;
+   --culoare6:#E44EA0;
+   --culoare7:#98456C;
+   --culoare8:#D35F95;
+   --culoare9:#421E2F;
+
+}
+
+
+header{
+    /*background-color: var(--culoare8);*/
+    background: radial-gradient(circle, var(--culoare4), var(--culoare7));
+    border-radius: 10px; 
+    border:3px solid var(--culoare7);
+    padding: 10px;
+}
+
+footer {
+    background-color: var(--culoare8);
+    border: 2px solid var(--culoare7); 
+    border-radius: 5px;
+    box-shadow: 0 0 10px var(--culoare7); 
+    padding:10px
+    
+}
+#grid-pagina {
+    /*background-color: var(--culoare4);*/
+    border: 2px solid var(--culoare7); 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px var(--culoare7);
+    padding: 10px;
+}
