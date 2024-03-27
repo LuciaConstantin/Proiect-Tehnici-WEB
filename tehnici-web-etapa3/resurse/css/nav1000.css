@@ -1,0 +1,14 @@
+nav{
+    --inaltime-meniu: 2.2 em;
+    --latime-buton: 120px;
+}
+#acasa-mediu{
+    display: block;
+}
+#acasa{
+    display: none;
+}
+
+#watermark,#banner{
+    display:none;
+}

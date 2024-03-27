@@ -1,0 +1,147 @@
+#watermark{
+    display: none;
+}
+#banner 
+{
+    display: none;
+}
+
+#grid-pag {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 15px;
+    column-gap: 5px;
+    padding:10px;
+    page-break-inside: avoid;
+}
+
+@media print {
+    #hamburger{
+        display: none;
+    }
+    #footer{
+        page-break-before: always;
+    }
+    #acasa-mediu{
+        width: 100%;
+        height: 100%;
+    }
+    ul.meniu{
+        display: block;
+        page-break-after: always;
+        list-style-type: none;
+        border: none; 
+    }
+    .carte{
+        display: none;
+    }
+    #titlu-imagine{
+        display: none;
+    }
+    .container-iframe{
+        display: none;
+    }
+    .taburi-iframe{
+        display: none;
+    }
+    .harta{
+        display: none;
+    }
+    #sageata{
+        display: none;
+    }
+    #link-top{
+        display: none;
+    }
+    #grid-pagina{
+        display: block;
+    }
+    #titlu-site {
+        text-align: center;
+    }
+
+#banner{
+    position: absolute;
+    display: inline-block;
+    top:90%;
+    width:70%;
+    height:20px;
+    overflow: visible;
+    border: inset 4px black;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%); 
+    text-align: center;
+}
+
+
+h1{
+    /*page-break-after: always;*/
+    /*margin-top: 50%;*/
+    text-align:center;
+    margin-left:1cm;
+}
+#grid-pag{
+    font-size: 10px;
+    box-sizing:border-box;
+    page-break-before:always;
+    page-break-inside: avoid;
+    background-color: white;
+    justify-content: center;
+    display:block;
+    }
+    html, body {
+    width: 210mm;
+    /* height: 297mm; */
+    /*height: 282mm;*/
+     overflow:visible !important;
+    }
+
+
+    #watermark
+    {
+        display: block;
+        position: fixed;/*apare pe toate paginile*/
+        bottom: 5px;
+        width: 4cm;
+        height: 1cm;
+        color:rgba(0,0,0,0.4);
+        right:0;
+        text-align: center;
+    }
+    #watermark::after{
+        content:"Constantin Lucia-Mihaela";
+        display: block;
+        opacity:0.4;
+        padding:5px;
+        background: white;
+        border:3px solid black;
+        border-radius: 10px;
+        font-weight: bold;
+        
+    }
+
+
+}
+
+@page {
+    size: A4 portrait;
+    margin-bottom:2cm;
+    margin-top:2cm;
+    counter-increment: page;
+        
+}
+@page:left{
+
+    margin-left:3cm;
+    margin-right:1cm;
+    /*border-radius: 20cm;*/
+}
+@page:right{
+
+    margin-right:3cm;
+    margin-left:1cm;
+}
+
+
+
