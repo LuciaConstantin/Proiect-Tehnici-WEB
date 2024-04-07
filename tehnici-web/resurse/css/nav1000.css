@@ -8,3 +8,7 @@ nav{
 #acasa{
     display: none;
 }
+
+#watermark,#banner{
+    display:none;
+}

@@ -29,35 +29,32 @@
     <link rel="stylesheet" href="resurse/css/stil.css" type="text/css" />
     <link rel="stylesheet" href="resurse/css/layout.css" type="text/css" />
     <link rel="stylesheet" href="resurse/css/general.css" type="text/css" />
-    <link rel="stylesheet" href="resurse/css/nav.css" type="text/css" />
+    <!--<link rel="stylesheet" href="resurse/css/nav.css" type="text/css" /> -->
+    <link rel="stylesheet" href="resurse/scss/nav_test.css" type="text/css"/>
+
     <link rel="stylesheet" href="resurse/css/nav1000.css" type="text/css" media="(max-width:1000px)" />
-    <link rel="stylesheet" href="resurse/css/nav700.css" type="text/css" media="(max-width:700px)"/>
+    <!--<link rel="stylesheet" href="resurse/css/nav700.css" type="text/css" media="(max-width:700px)"/> -->
+
+    <link rel="stylesheet" href="resurse/scss/nav700_test.css" type="text/css" media="(max-width:700px)"/>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="resurse/css/printare.css" media="print">
 </head>
 
 <body>
-    <header>
-        <h1>Magazin de carti</h1>
-        <!--<nav>
-            <ul>
-                <li>Acasa
-                    <ul>
-                        <li><a href="#welcome">Welcome</a></li>
-                        <li><a href="#promotii">Promotii</a></li>
-                    </ul>
-                </li>
-
-            </ul>
-        </nav>-->
-        <nav>
-            
+    <header>  
+        <h1 id="titlu-site">Magazin de carti</h1>
+    </header>
+    <nav>            
             <label id="hamburger" for="ch-menu">
-                <img src="resurse/imagini/Hamburger_icon_alb.png" alt="menu">
-            </label>
+                <img src="resurse/imagini/Hamburger_icon_alb.png" alt="menu" height="50px" width="30px">
+            </label> 
+            
             <input id="ch-menu" type="checkbox">
             <ul class="meniu">
                 <li><div id="acasa">Acasa</div><div id="acasa-mediu"><span class="fas fa-regular fa-house"></span></div>
@@ -65,12 +62,9 @@
                         <li><a href="#welcome">Bine ati venit</a></li>
                         <li><a href="#promotii">Promotii</a></li>
                         <li><a href="#anunturi">Anunturi</a></li>
-                        <li><a href="#produse">Oferta</a></li>
                         <li><a href="#orar">Orar</a></li>
                         <li><a href="#index-intrebari">Întrebări</a></li>
-                        <li><a href="#retete">Rețete</a></li>
                     </ul>
-                
                 
                 </li>
                 <li><a href="#">Inregistrare</a></li>
@@ -85,18 +79,18 @@
                 <li><div>Produse</div>
                     <ul>
                         <li><a href="http://www.google.com">Toate</a></li>
-                        <li><a href="#">Prajituri</a></li>
-                        <li><a href="#">Torturi</a></li>
-                        <li><a href="#">Patiserie</a></li>
+                        <li><a href="#">Carti</a></li>
+                        <li><a href="#">Manuale</a></li>
+                        <li><a href="#">Enciclopedii</a></li>
                     </ul>
                 
                 </li>
                 <li><a href="#">Contact</a></li>
             </ul>
-        </nav>
-
+    </nav>
+    <p id="watermark"></p>
     
-    </header>
+    
     <main>
         <div id="grid-pagina">
             <section id="welcome">
@@ -108,43 +102,14 @@
 
             <figure>
                 <picture>
-                    <source srcset="./resurse/imagine/img1.jpg" media="(max-width:700px)" />
-                    <source srcset="./resurse/imagine/img2.jpg" media="(max-width:1000px)" />
-                    <img class="carte" src="./resurse/imagine/NzgwJmg9NDQwJmhhc2g9NTgwNThjYmZlMDZhNWQ1MmQ4YmI1MmFkYThiYzM3OGU=.thumb.jpg"
-                        alt="imagine" title="Carti deschise">
+                    <source srcset="./resurse/imagini/img1.jpg" media="(max-width:700px)" />
+                    <source srcset="./resurse/imagini/img2.jpg" media="(max-width:1000px)" />
+                    <img class="carte" src="./resurse/imagini/NzgwJmg9NDQwJmhhc2g9NTgwNThjYmZlMDZhNWQ1MmQ4YmI1MmFkYThiYzM3OGU=.thumb.jpg"
+                        alt="imagini" title="Carti deschise">
                 </picture>
-                <figcaption>Carti</figcaption>
+                <figcaption id="titlu-imagini">Carti</figcaption>
             </figure>
         </section>
-        <section id="calendar-evenimente">
-            <h2>Calendar evenimente</h2>
-                <p>In hendrerit gravida rutrum quisque non tellus orci ac. Sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula. Fermentum dui faucibus in ornare quam viverra orci sagittis. At tellus at urna condimentum mattis pellentesque id nibh. Ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan. Suspendisse in est ante in nibh mauris cursus mattis. Facilisis leo vel fringilla est ullamcorper eget nulla facilisi etiam. Est sit amet facilisis magna etiam. Enim nec dui nunc mattis enim. Condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus. Ut eu sem integer vitae. Laoreet id donec ultrices tincidunt arcu non. Amet commodo nulla facilisi nullam vehicula ipsum. Mattis rhoncus urna neque viverra justo nec ultrices. Ut diam quam nulla porttitor massa id neque.</p>
-        </section>
-        <section id="anunturi">
-            <h2>Anunturi</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mauris in aliquam sem fringilla ut morbi tincidunt augue interdum. Nibh ipsum consequat nisl vel pretium lectus quam. Mauris in aliquam sem fringilla ut morbi. Sed lectus vestibulum mattis ullamcorper velit sed. Ornare suspendisse sed nisi lacus sed viverra tellus in. Non nisi est sit amet. Pharetra vel turpis nunc eget lorem dolor sed viverra. Donec ultrices tincidunt arcu non sodales neque. Vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Interdum velit laoreet id donec ultrices tincidunt arcu. Velit egestas dui id ornare arcu odio ut sem nulla. Laoreet sit amet cursus sit amet dictum sit amet justo.</p>
-        </section>
-        <section id="lista-utilizatori">
-            <h2>Lista utilizatori online</h2>
-                <p>
-                    Purus in mollis nunc sed id. Mus mauris vitae ultricies leo integer malesuada nunc vel risus. Convallis posuere morbi leo urna molestie at. Et netus et malesuada fames ac. Quam quisque id diam vel quam elementum pulvinar etiam. Erat nam at lectus urna duis convallis convallis tellus. Vestibulum lorem sed risus ultricies. Imperdiet proin fermentum leo vel. Egestas erat imperdiet sed euismod nisi porta lorem mollis. Tellus mauris a diam maecenas sed enim ut sem. Bibendum enim facilisis gravida neque convallis a cras semper. Posuere sollicitudin aliquam ultrices sagittis. Eu scelerisque felis imperdiet proin fermentum leo. Condimentum vitae sapien pellentesque habitant morbi tristique. Ac tincidunt vitae semper quis lectus nulla at volutpat diam.
-                </p>
-        </section>
-
-        <section id="utilizator-statistici">
-            <h2>Date despre utilizator si statistici</h2>
-                <p>
-                    Dictum varius duis at consectetur lorem donec massa sapien faucibus. Dapibus ultrices in iaculis nunc sed. Ut venenatis tellus in metus vulputate eu scelerisque. Nullam ac tortor vitae purus faucibus ornare suspendisse sed. Feugiat in fermentum posuere urna nec tincidunt. Vestibulum morbi blandit cursus risus at ultrices. Eget felis eget nunc lobortis mattis aliquam faucibus. Libero justo laoreet sit amet. Volutpat est velit egestas dui id ornare arcu. Aenean euismod elementum nisi quis eleifend quam adipiscing vitae proin. Sit amet nisl purus in mollis nunc sed. Enim eu turpis egestas pretium aenean pharetra magna. Est placerat in egestas erat imperdiet sed. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Aliquam id diam maecenas ultricies. Cras sed felis eget velit aliquet.
-                </p>
-        </section>
-        
-        <section id="site-server">
-            <h2>Date despre site si server</h2>
-                <p>
-                    Ac turpis egestas maecenas pharetra convallis posuere morbi leo urna. Sed viverra ipsum nunc aliquet bibendum enim facilisis gravida. Lorem mollis aliquam ut porttitor leo a diam sollicitudin tempor. In nisl nisi scelerisque eu ultrices vitae. Velit ut tortor pretium viverra suspendisse potenti nullam. Elit sed vulputate mi sit. Vestibulum sed arcu non odio euismod lacinia at. Adipiscing commodo elit at imperdiet dui. Integer eget aliquet nibh praesent tristique. Mattis aliquam faucibus purus in massa tempor. Mi ipsum faucibus vitae aliquet nec. Orci ac auctor augue mauris augue neque. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Vestibulum lectus mauris ultrices eros in cursus turpis massa tincidunt. Orci eu lobortis elementum nibh tellus molestie. Tristique risus nec feugiat in fermentum posuere. Congue nisi vitae suscipit tellus. Sit amet consectetur adipiscing elit pellentesque habitant morbi tristique senectus.
-                </p>
-        </section>
-        
         <section id="orar">
             <div class="scroll">
             <table id="tab-orar">
@@ -213,6 +178,39 @@
         </div>
             
         </section>
+
+        <section id="calendar-evenimente">
+            <h2>Calendar evenimente</h2>
+                <p>In hendrerit gravida rutrum quisque non tellus orci ac. Sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula. Fermentum dui faucibus in ornare quam viverra orci sagittis. At tellus at urna condimentum mattis pellentesque id nibh. Ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan. Suspendisse in est ante in nibh mauris cursus mattis. Facilisis leo vel fringilla est ullamcorper eget nulla facilisi etiam. Est sit amet facilisis magna etiam. Enim nec dui nunc mattis enim. Condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus. Ut eu sem integer vitae. Laoreet id donec ultrices tincidunt arcu non. Amet commodo nulla facilisi nullam vehicula ipsum. Mattis rhoncus urna neque viverra justo nec ultrices. Ut diam quam nulla porttitor massa id neque.</p>
+        </section>
+
+        
+        <section id="anunturi">
+            <h2>Anunturi</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mauris in aliquam sem fringilla ut morbi tincidunt augue interdum. Nibh ipsum consequat nisl vel pretium lectus quam. Mauris in aliquam sem fringilla ut morbi. Sed lectus vestibulum mattis ullamcorper velit sed. Ornare suspendisse sed nisi lacus sed viverra tellus in. Non nisi est sit amet. Pharetra vel turpis nunc eget lorem dolor sed viverra. Donec ultrices tincidunt arcu non sodales neque. Vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Interdum velit laoreet id donec ultrices tincidunt arcu. Velit egestas dui id ornare arcu odio ut sem nulla. Laoreet sit amet cursus sit amet dictum sit amet justo.</p>
+        </section>
+        <section id="lista-utilizatori">
+            <h2>Lista utilizatori online</h2>
+                <p>
+                    Purus in mollis nunc sed id. Mus mauris vitae ultricies leo integer malesuada nunc vel risus. Convallis posuere morbi leo urna molestie at. Et netus et malesuada fames ac. Quam quisque id diam vel quam elementum pulvinar etiam. Erat nam at lectus urna duis convallis convallis tellus. Vestibulum lorem sed risus ultricies. Imperdiet proin fermentum leo vel. Egestas erat imperdiet sed euismod nisi porta lorem mollis. Tellus mauris a diam maecenas sed enim ut sem. Bibendum enim facilisis gravida neque convallis a cras semper. Posuere sollicitudin aliquam ultrices sagittis. Eu scelerisque felis imperdiet proin fermentum leo. Condimentum vitae sapien pellentesque habitant morbi tristique. Ac tincidunt vitae semper quis lectus nulla at volutpat diam.
+                </p>
+        </section>
+
+        <section id="utilizator-statistici">
+            <h2>Date despre utilizator si statistici</h2>
+                <p>
+                    Dictum varius duis at consectetur lorem donec massa sapien faucibus. Dapibus ultrices in iaculis nunc sed. Ut venenatis tellus in metus vulputate eu scelerisque. Nullam ac tortor vitae purus faucibus ornare suspendisse sed. Feugiat in fermentum posuere urna nec tincidunt. Vestibulum morbi blandit cursus risus at ultrices. Eget felis eget nunc lobortis mattis aliquam faucibus. Libero justo laoreet sit amet. Volutpat est velit egestas dui id ornare arcu. Aenean euismod elementum nisi quis eleifend quam adipiscing vitae proin. Sit amet nisl purus in mollis nunc sed. Enim eu turpis egestas pretium aenean pharetra magna. Est placerat in egestas erat imperdiet sed. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Aliquam id diam maecenas ultricies. Cras sed felis eget velit aliquet.
+                </p>
+        </section>
+        
+        <section id="site-server">
+            <h2>Date despre site si server</h2>
+                <p>
+                    Ac turpis egestas maecenas pharetra convallis posuere morbi leo urna. Sed viverra ipsum nunc aliquet bibendum enim facilisis gravida. Lorem mollis aliquam ut porttitor leo a diam sollicitudin tempor. In nisl nisi scelerisque eu ultrices vitae. Velit ut tortor pretium viverra suspendisse potenti nullam. Elit sed vulputate mi sit. Vestibulum sed arcu non odio euismod lacinia at. Adipiscing commodo elit at imperdiet dui. Integer eget aliquet nibh praesent tristique. Mattis aliquam faucibus purus in massa tempor. Mi ipsum faucibus vitae aliquet nec. Orci ac auctor augue mauris augue neque. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Vestibulum lectus mauris ultrices eros in cursus turpis massa tincidunt. Orci eu lobortis elementum nibh tellus molestie. Tristique risus nec feugiat in fermentum posuere. Congue nisi vitae suscipit tellus. Sit amet consectetur adipiscing elit pellentesque habitant morbi tristique senectus.
+                </p>
+        </section>
+        
+        
         <section id="promotii">
             <h2>Promotii</h2>
 
@@ -236,18 +234,6 @@
                 </details>
                 </details>
             </section>
-            <!---
-            <div class="taburi-iframe">
-                <a href="https://www.youtube.com/embed/9-xTH7r_QNQ?si=7276Lf7UxVjDC4-S" target="ifr-video">Recomandare
-                    carti non-fiction</a>
-                <a href="https://www.youtube.com/embed/IMLRxwyV-S8?si=Uqo2HzK4tQ4Aqusj" target="ifr-video">Recomandare
-                    carti populare</a>
-            </div>
-            <iframe name="ifr-video" width="560" height="315"
-                src="https://www.youtube.com/embed/9-xTH7r_QNQ?si=7276Lf7UxVjDC4-S" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe> -->
 
             <div class="container-iframe">
                 <div class="taburi-iframe">
@@ -275,11 +261,11 @@
                     <mtable>
                         <mtr>
                             <mtd>
-                                <mi>megareducere</mi>
+                                <mi id="titlu-reducere">megareducere</mi>
                                 <mo>=</mo>
-                                <mi>pret</mi>
+                                <mi id="pret">pret</mi>
                                 <mo>-</mo>
-                                <mi>15%</mi>
+                                <mi id="procent">15%</mi>
                             </mtd>
                         </mtr>
                     </mtable>
@@ -290,7 +276,7 @@
         </section>
     </div>
     </main>
-    <footer>
+    <footer id="footer">
         <i class="fa-brands fa-google"></i>
         <a href="https://www.google.co.uk/" target="_blank">Google</a>
         <br>
@@ -311,8 +297,10 @@
             <a href="https://wa.me/07456789854">Whatsapp</a>
 
         </address>
+        <p><small>Copyright &copy; <time datetime="2024-03-04">4 octombirie 2024</time> </small></p>
+        <p id="banner">Acesta este un proiect scolar</p>
     </footer>
-    <p><small>Copyright &copy; <time datetime="2024-03-04">4 octombirie 2024</time> </small></p>
+    
 
 </body>
 

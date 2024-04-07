@@ -1,5 +1,8 @@
 /*facem vizibil iconul de hamburger meniu*/
 
+#watermark,#banner{
+    display:none;
+}
 #hamburger{
     display:block;
 }
@@ -12,20 +15,24 @@
 ul.meniu{
     display:none;
     position:absolute;
-    width:100%;
+    width: 0%;
+    height: 0%;
+    transform-origin: top-left;
+    
 }
 
 /*aici facem vizibil meniul cand faem click pe hamburger meniu*/
 #ch-menu:checked+ul.meniu{
     display: block;
     z-index: 2;
-    position: relative;
+    position: absolute;/* ar trebui absolute*/
     transform-origin: 0 0;
     animation-name: aparitie_meniu_p;
     animation-iteration-count:1;
-    animation-duration:0.7s;
+    animation-duration:1s;
     animation-fill-mode:forwards;
     animation-timing-function:linear;
+    background-color: var(--culoare8);
 }
 #ch-menu:checked+ul.meniu>li>div,#ch-menu:checked+ul.meniu>li>a{
     
@@ -37,12 +44,15 @@ ul.meniu{
     animation-duration:0.7s;
     animation-fill-mode:forwards;
     animation-timing-function:linear;
+    background-color: var(--culoare8);
 }
 /*optiunile se intind pe toata latimea containerului*/
 nav ul.meniu li{
     width:100%;
 }
-
+nav{
+    position: relative;
+}
 /*meniul sa vina deasupra continutul de mai jos, fara sa impinga continutul*/
 nav ul.meniu>li ul{
     position:absolute;
@@ -50,7 +60,9 @@ nav ul.meniu>li ul{
     z-index:200;
     transform:scale(1,1) !important;
     opacity: 1 !important;
+    background-color: var(--culoare8);
 }
+
 
 #ch-menu:checked+ul.meniu>li ul>*{
     position:relative;
@@ -62,21 +74,33 @@ nav ul.meniu>li:hover>ul{
     animation:none;
 }
 
+nav ul.meniu li:hover {
+    box-shadow: inset 0 0 5px var(--culoare4); 
+}
+
+nav ul.meniu li ul:hover {
+    box-shadow: inset 0 0 5px var(--culoare4); 
+}
 
 /* pentru fiecare element din submeniu generam un triunghiulet alb inaintea lui*/
-nav ul.meniu>li li a:before{
+/*nav ul.meniu>li li a:before{
     content:" \25B7\00A0	";
     color:white;
 
-}
+}*/
 
 @keyframes aparitie_meniu_p{
     0%{
         opacity:0;
-        
+        width:0%;
+        height: 0%;
+        transform: scale(0,0);
     } 
 	100%{
     	opacity:1;
+        width:100%;
+        height: 100%;
+        transform: scale(1,1);
     }
 }
 

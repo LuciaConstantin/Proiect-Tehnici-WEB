@@ -98,6 +98,7 @@
     text-align: center;
     box-shadow: 0px 5px 15px var(--culoare9);
     transition: all 0.4s linear;
+    content: none;
     
 }
 
@@ -105,6 +106,7 @@
     background-color: var(--culoare8);
     
 }
+
 
 
 

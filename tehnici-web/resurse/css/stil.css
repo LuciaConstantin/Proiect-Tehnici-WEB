@@ -44,3 +44,91 @@ footer {
     box-shadow: 0 0 10px var(--culoare7);
     padding: 10px;
 }
+
+#titlu-reducere{
+    color: var(--culoare6);
+}
+
+#procent{
+    color: var(--culoare9);
+    font-style: italic;
+}
+
+#pret{
+    font-weight: bold;
+}
+
+
+::cue{
+ background-color: var(--culoare9);
+ color:white;
+}
+
+
+main a:visited{
+    color: var(--culoare9);
+}
+
+footer a, .mail, .telefon, .descarcabil:visited{
+    color: var(--culoare4);
+}
+
+a[href^="http"]::before {
+    content: "⮳";
+    font-size: 1.5em; 
+}
+
+a[href^="http"]:hover::before {
+    color: var(--culoare9); 
+}
+
+.taburi-iframe a::before {
+    content:  none !important; 
+}
+
+
+main a:active{
+    border: 2px solid var(--culoare9);
+}
+
+footer a:active{
+    border: 2px solid var(--culoare9);
+}
+
+
+
+.link{
+    background-image: radial-gradient( var(--culoare6) 40%, transparent 80%);
+    background-size: 0;
+    background-position: center;
+    transition:all 0.7s linear;
+}
+
+.link:hover {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition-delay: 0s;
+}
+
+.link:not(:hover) {
+    background-repeat: no-repeat;
+    background-size: 0; 
+}
+
+footer a{
+    background-image: radial-gradient( var(--culoare9) 40%, transparent 80%);
+    background-size: 0;
+    background-position: center;
+    transition:all 0.7s linear;
+}
+
+footer a:hover {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition-delay: 0s;
+}
+
+footer a:not(:hover) {
+    background-repeat: no-repeat;
+    background-size: 0; 
+}
