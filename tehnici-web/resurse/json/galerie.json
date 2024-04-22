@@ -1,0 +1,89 @@
+{
+	"cale_galerie":"resurse/imagini/galerie",
+	"imagini": [
+		{
+			"cale_imagine":"biblioteca1.jpg",
+			"titlu":"Librarie exterior",
+			"descriere":"Exteriorul librariei",
+			"sfert_ora":"1"
+		},
+		{
+			"cale_imagine":"biblioteca2.jpg",
+			"titlu":"Librarie interior",
+			"descriere":"Interiorul librariei",
+			"sfert_ora":["1", "4"]
+		},
+		{
+			"cale_imagine":"biblioteca3.png",
+			"titlu":"Librarie desenata",
+			"descriere":"Libraria prin ochii copiilor",
+			"sfert_ora":["2", "4"]
+		},
+		{
+			"cale_imagine":"biblioteca4.jpg",
+			"titlu":"Raft carti",
+			"descriere":"Rafturi cu carti",
+			"sfert_ora":"1"
+		},
+		{
+			"cale_imagine":"biblioteca5.jpg",
+			"titlu":"Carti copii",
+			"descriere":"Carti pentru copii",
+			"sfert_ora":["1","2"]
+		},
+		{
+			"cale_imagine":"biblioteca6.png",
+			"titlu":"Librarie",
+			"descriere":"Librarie desenata",
+			"sfert_ora":["1","3"]
+		},
+		{
+			"cale_imagine":"biblioteca7.jpg",
+			"titlu":"Raft carti",
+			"descriere":"Rafturi cu carti diverse",
+			"sfert_ora":["1","3"]
+		},
+		{
+			"cale_imagine":"carte5.jpg",
+			"titlu":"Carti deschise",
+			"descriere":"Carti captivante ",
+			"sfert_ora":"1"
+		},
+		{
+			"cale_imagine":"carte2.jpg",
+			"titlu":"Carte",
+			"descriere":"Carte",
+			"sfert_ora":["1","2"]
+		},
+		{
+			"cale_imagine":"carte3.jpg",
+			"titlu":"Carte",
+			"descriere":"Carti relaxante",
+			"sfert_ora":"2"
+		},
+		{
+			"cale_imagine":"carte4.jpg",
+			"titlu":"Carti",
+			"descriere":"Foarte multe carti",
+			"sfert_ora":"1"
+		},
+		{
+			"cale_imagine":"pisica1.jpg",
+			"titlu":"Carti pentru copii si pisici",
+			"descriere":"Carti cu pisici",
+			"sfert_ora":"2"
+		},
+		{
+			"cale_imagine":"pisica2.jpg",
+			"titlu":"Pisica paznicul cartilor",
+			"descriere":"Pisica si carti",
+			"sfert_ora":["1","2"]
+		},
+		{
+			"cale_imagine":"carte1.jpg",
+			"titlu":"Carti despre flori",
+			"descriere":"Carte cu flori",
+			"sfert_ora":"1"
+		}
+	]
+}

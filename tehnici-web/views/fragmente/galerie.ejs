@@ -1,0 +1,27 @@
+<section id="galerie-statica">
+    <h2>Galerie</h2>
+    <div id="grid-galerie">
+        <% 
+            var vIntervale=["1","2","3","4"]
+            var data= new Date();
+            var minute = data.getMinutes();
+            var interval = Math.floor(minute / 15);
+            var counter=0;
+            var intervalCurent = vIntervale[interval]
+            for (let imag of locals.imagini) { 
+                if (imag?.sfert_ora?.includes(intervalCurent)) {
+                    if(counter<10){%>  
+                    <figure> 
+                        <picture>
+                            <source srcset="<%= imag.cale_imagine_mediu %>" media="(max-width:1200px)"/>
+                            <img src="<%= imag.cale_imagine %>" alt="Carti">
+                        </picture>
+                    
+                    <figcaption><%= imag.descriere%></figcaption>
+                    </figure>
+                    <% counter++; %>
+            <% } %>
+        <% } %>
+     <% } %> 
+    </div>
+</section>

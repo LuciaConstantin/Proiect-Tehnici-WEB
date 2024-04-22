@@ -1,0 +1,94 @@
+@charset "UTF-8";
+nav {
+  --inaltime-meniu: 2.5em;
+  --latime-buton: 150px;
+  height: var(--inaltime-meniu);
+  background-color: var(--culoare8);
+  border-radius: 5px;
+}
+
+#hamburger, #ch-menu {
+  display: none;
+}
+
+#acasa-mediu {
+  display: none;
+}
+
+.meniu ul, .meniu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: var(--culoare8);
+}
+
+.meniu {
+  display: flex;
+}
+.meniu ul {
+  display: none;
+  opacity: 0;
+  transform: scaleY(0);
+  background-color: var(--culoare8);
+  text-align: right;
+}
+.meniu li {
+  border: 1px solid var(--culoare9);
+  width: var(--latime-buton);
+  height: var(--inaltime-meniu);
+  text-align: center;
+  box-sizing: border-box;
+}
+.meniu li:hover > ul {
+  display: block;
+  position: absolute;
+  z-index: 100;
+  animation: animatie_submeniu 1s linear 1 forwards;
+  transform-origin: center top;
+}
+.meniu li:hover > div {
+  box-shadow: inset 0 0 16px var(--culoare4);
+}
+.meniu li:hover > a[href$="#"] {
+  box-shadow: inset 0 0 16px var(--culoare4);
+}
+
+.meniu li div, .meniu li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  line-height: var(--inaltime-meniu);
+  color: var(--culoare-text);
+  text-decoration: none;
+  box-sizing: border-box;
+  transition: all 1s linear;
+}
+
+@keyframes animatie_submeniu {
+  100% {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
+@media screen and (min-width: 700px) {
+  nav ul.meniu > li li a {
+    text-align: right;
+    position: relative;
+    overflow: hidden;
+  }
+  nav ul.meniu > li li a:before {
+    content: " →";
+    position: absolute;
+    transition: linear 0.5s;
+    left: -20px;
+  }
+  nav ul.meniu > li li a:hover:before {
+    color: var(--culoare9);
+    opacity: 1;
+    left: 5px;
+  }
+}
+#watermark, #banner {
+  display: none;
+}

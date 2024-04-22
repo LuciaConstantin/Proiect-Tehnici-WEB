@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<!--
+    Comentariu
+-->
+<html lang="ro">
+
+<head>
+    
+    <%- include("../fragmente/head.ejs") %>
+    <meta name="keywords"
+        content="carte, povesti, transport curier, bestseller, manual, dictionare, Romania, biografii, review, carte copii, carte dezvoltare personale">
+    <meta name="description"
+        content="Magazin de carti. Carti, dictionare, manuale. Carti pentru copii, adolescenti, Carti de dezvoltare personala, Carti bestseller. Livrare la domiciliu">
+    <title>Magazin de carti</title>
+</head>
+
+<body>
+    
+    <%- include("../fragmente/header.ejs") %>
+    
+    <main>
+        <div id="grid-pagina">
+            <section id="welcome">
+            <h2>Bine ati venit</h2>
+            <p>Ip: <%- locals.ip %></p>
+            <button type="button" class="btn btn-primary btn-lg">Stil-1-mare</button>
+            <%- include("../fragmente/galerie.ejs") %> 
+            <hr>
+            <p>Lectura este unul dintre cele mai frumoase placeri ale vietii. <b>Magazinul Cartisoara</b> contine o
+                larga varietate de carti de la <b>romane de dragoste, sau actiune la carti de poezii , manuale sau chiar
+                    carti de dezvoltare personala</b></p>
+            <!--<div class="intro-oferte"><div>Pateuri</div><div>Bomboane</div><div>Fursecuri</div><div>Prajituri</div><div>Torturi</div></div>-->
+
+            <figure>
+                <picture>
+                    <source srcset="./resurse/imagini/img1.jpg" media="(max-width:700px)" />
+                    <source srcset="./resurse/imagini/img2.jpg" media="(max-width:1000px)" />
+                    <img class="carte" src="./resurse/imagini/NzgwJmg9NDQwJmhhc2g9NTgwNThjYmZlMDZhNWQ1MmQ4YmI1MmFkYThiYzM3OGU=.thumb.jpg"
+                        alt="imagine" title="Carti deschise">
+                </picture>
+                <figcaption id="titlu-imagine">Carti</figcaption>
+            </figure>
+        </section>
+        <section id="orar" class="col-md-6 col-lg-12">
+            <div class="scroll">
+            <table id="tab-orar">
+                <thead>
+
+                    <tr>
+                        <th>Perioada</th>
+                        <th>Zi</th>
+                        <th>Eveniment</th>
+                        <th>Interval</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="5">Zile<br/>Lucrătoare</td>
+                        <td>Luni</td>
+                        <td>Club de lectura</td>
+                        <td>14_20</td>
+                        
+                    </tr>
+                    <tr>
+                      
+                        <td>Marti</td>
+                        <td>Atelier de scriere creativa</td>
+                        <td>16-20</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Miercuri</td>
+                        <td>Curs si prelegere despre carti</td>
+                        <td>17-19</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Joi</td>
+                        <td>Club de lectura</td>
+                        <td>15-19</td>
+                        
+                    </tr>
+                    <tr>
+                       
+                        <td>Vineri</td>
+                        <td>Seara de poezie</td>
+                        <td>20-22</td>
+                        
+                    </tr>
+                    <tr>
+                       
+                        <td rowspan="2">Weekend</td>
+                        <td>Sambata</td>
+                        <td>Lectura pentru copii</td>
+                        <td>9-13</td>
+                        
+                    </tr>
+                    <tr>
+                        
+                        <td>Duminica</td>
+                        <td>Carti grafice</td>
+                        <td>14-17</td>
+                        
+                    </tr>
+                </tbody>
+                <tfoot><tr><td colspan="5">Închis cu ocazia sărbătorilor legale sau când ne e mai lene așa.</td></tr></tfoot>
+                <caption id="program-evenimente">Program evenimente</caption>
+            </table> 
+        </div>
+            
+        </section>
+
+        <section id="calendar-evenimente" class="bg-primary">
+            <h2 >Calendar evenimente</h2>
+                <p class="col">In hendrerit gravida rutrum quisque non tellus orci ac. Sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula. Fermentum dui faucibus in ornare quam viverra orci sagittis. At tellus at urna condimentum mattis pellentesque id nibh. Ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan. Suspendisse in est ante in nibh mauris cursus mattis. Facilisis leo vel fringilla est ullamcorper eget nulla facilisi etiam. Est sit amet facilisis magna etiam. Enim nec dui nunc mattis enim. Condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus. Ut eu sem integer vitae. Laoreet id donec ultrices tincidunt arcu non. Amet commodo nulla facilisi nullam vehicula ipsum. Mattis rhoncus urna neque viverra justo nec ultrices. Ut diam quam nulla porttitor massa id neque.</p>
+        </section>
+
+        
+        <section id="anunturi">
+            <div id="container-text">
+                <h2 id="text">Anunturi</h2>
+                <h2 id="text-reflectat">Anunturi</h2>
+            </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mauris in aliquam sem fringilla ut morbi tincidunt augue interdum. Nibh ipsum consequat nisl vel pretium lectus quam. Mauris in aliquam sem fringilla ut morbi. Sed lectus vestibulum mattis ullamcorper velit sed. Ornare suspendisse sed nisi lacus sed viverra tellus in. Non nisi est sit amet. Pharetra vel turpis nunc eget lorem dolor sed viverra. Donec ultrices tincidunt arcu non sodales neque. Vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Interdum velit laoreet id donec ultrices tincidunt arcu. Velit egestas dui id ornare arcu odio ut sem nulla. Laoreet sit amet cursus sit amet dictum sit amet justo.</p>
+        </section>
+        <section id="lista-utilizatori">
+            <h2>Lista utilizatori online</h2>
+                <p>
+                    Purus in mollis nunc sed id. Mus mauris vitae ultricies leo integer malesuada nunc vel risus. Convallis posuere morbi leo urna molestie at. Et netus et malesuada fames ac. Quam quisque id diam vel quam elementum pulvinar etiam. Erat nam at lectus urna duis convallis convallis tellus. Vestibulum lorem sed risus ultricies. Imperdiet proin fermentum leo vel. Egestas erat imperdiet sed euismod nisi porta lorem mollis. Tellus mauris a diam maecenas sed enim ut sem. Bibendum enim facilisis gravida neque convallis a cras semper. Posuere sollicitudin aliquam ultrices sagittis. Eu scelerisque felis imperdiet proin fermentum leo. Condimentum vitae sapien pellentesque habitant morbi tristique. Ac tincidunt vitae semper quis lectus nulla at volutpat diam.
+                </p>
+        </section>
+
+        <section id="utilizator-statistici" >
+            <h2>Date despre utilizator si statistici</h2>
+                <p>
+                    Dictum varius duis at consectetur lorem donec massa sapien faucibus. Dapibus ultrices in iaculis nunc sed. Ut venenatis tellus in metus vulputate eu scelerisque. Nullam ac tortor vitae purus faucibus ornare suspendisse sed. Feugiat in fermentum posuere urna nec tincidunt. Vestibulum morbi blandit cursus risus at ultrices. Eget felis eget nunc lobortis mattis aliquam faucibus. Libero justo laoreet sit amet. Volutpat est velit egestas dui id ornare arcu. Aenean euismod elementum nisi quis eleifend quam adipiscing vitae proin. Sit amet nisl purus in mollis nunc sed. Enim eu turpis egestas pretium aenean pharetra magna. Est placerat in egestas erat imperdiet sed. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Aliquam id diam maecenas ultricies. Cras sed felis eget velit aliquet.
+                </p>
+        </section>
+        
+        <section id="site-server">
+            <h2>Date despre site si server</h2>
+                <p>
+                    Ac turpis egestas maecenas pharetra convallis posuere morbi leo urna. Sed viverra ipsum nunc aliquet bibendum enim facilisis gravida. Lorem mollis aliquam ut porttitor leo a diam sollicitudin tempor. In nisl nisi scelerisque eu ultrices vitae. Velit ut tortor pretium viverra suspendisse potenti nullam. Elit sed vulputate mi sit. Vestibulum sed arcu non odio euismod lacinia at. Adipiscing commodo elit at imperdiet dui. Integer eget aliquet nibh praesent tristique. Mattis aliquam faucibus purus in massa tempor. Mi ipsum faucibus vitae aliquet nec. Orci ac auctor augue mauris augue neque. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Vestibulum lectus mauris ultrices eros in cursus turpis massa tincidunt. Orci eu lobortis elementum nibh tellus molestie. Tristique risus nec feugiat in fermentum posuere. Congue nisi vitae suscipit tellus. Sit amet consectetur adipiscing elit pellentesque habitant morbi tristique senectus.
+                </p>
+        </section>
+        
+        
+        <section id="promotii" class="rounded-2">
+            <h2>Promotii</h2>
+
+            <section>
+                <h3>Super oferta de weekend</h3>
+                <p>
+                    <strong>Oferta limitata! Cumperi 3 carti si primesti una gratuita!</strong>
+                </p>
+                <h3>Oferta pachet</h3>
+                <p>Cumperi 3 carti si ai o reducere de <s>10%</s><ins>15%</ins></p>
+            </section>
+            <section id="index-intrebari">
+                <h2>Intrebari frecvente</h2>
+                <details>
+                    <summary class="text-primary">Produsele dumneavoastra au transport gratuit?</summary>
+                    <p>Da la comenzi de peste 100 lei</p>
+                </details>
+                <details>
+                    <summary class="text-primary">Exista o locatie fizica a magazinului?</summary>
+                    <P>Da exista si este la adresa Strada Cartilor nr.100, Bucuresti, sectorul 4, Romania </P>
+                </details>
+                </details>
+            </section>
+
+            <div class="container-iframe">
+                <div class="taburi-iframe">
+                    <a  href="https://www.youtube.com/embed/9-xTH7r_QNQ?si=7276Lf7UxVjDC4-S" target="ifr-video" >Non-fiction</a>
+                    <a  href="https://www.youtube.com/embed/IMLRxwyV-S8?si=Uqo2HzK4tQ4Aqusj" target="ifr-video" >Carti 2023</a>
+                    <a  href="https://www.youtube.com/embed/fMxUfVMOq54?si=puJHLD9RgVBW9SGz" target="ifr-video" >Top 20 carti</a>
+                </div>
+                <!--<div class="video"> -->
+                    <iframe name="ifr-video" width="560" height="315" src="https://www.youtube.com/embed/9-xTH7r_QNQ?si=7276Lf7UxVjDC4-S" title="YouTube video player"
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <!--</div> -->
+            </div>
+            
+            
+            <br>
+            <i class="fa-solid fa-route fa-bounce"></i>
+            <br>
+            <iframe class="harta"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d91247.97874373758!2d26.125145299999996!3d44.38187055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1fe0d5b715d0b%3A0xfa8fc62cda461d44!2sBucure%C5%9Fti%20Sectorul%204%2C%20Bucure%C8%99ti!5e0!3m2!1sro!2sro!4v1709539688194!5m2!1sro!2sro"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <br>
+            <math xmlns="http://www.w3.org/1998/Math/MathML" >
+                <mrow>
+                    <mo>*</mo>
+                    <mtable>
+                        <mtr>
+                            <mtd>
+                                <mi>megareducere</mi>
+                                <mo>=</mo>
+                                <mi>pret</mi>
+                                <mo>-</mo>
+                                <mi>15%</mi>
+                            </mtd>
+                        </mtr>
+                    </mtable>
+                    <mo>*</mo>
+                </mrow>
+            </math>
+            <br>
+
+            <video class="video-vtt" width="600" height="300" controls preload="auto" controls poster="./resurse/imagini/poster.png">
+                <source src="./resurse/video/video1.mp4" type="video/mp4">
+                <source src="./resurse/video/video2.ogv" type="video/ogv">
+                <track default src="./resurse/video/mesaje_ro.vtt" kind="captions" srclang="ro" label="romana" />
+                <track  src="./resurse/video/mesaje_en.vtt" kind="captions" srclang="en" label="engleza" />
+                Browserul dumneavoastră nu suportă tagul video.
+            </video>
+            <br>
+            
+            <i class="fa-brands fa-google"></i>
+            <a  class ="link" href="https://www.google.co.uk/" target="_blank">Google</a>
+        
+        </section>
+
+    </div>
+
+
+    </main>
+    <%- include("../fragmente/footer.ejs") %>
+    
+
+</body>
+
+</html>

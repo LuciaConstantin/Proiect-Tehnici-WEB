@@ -1,0 +1,178 @@
+#grid-pagina
+{
+    display: grid;
+    gap: 15 px;
+    grid-gap:10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:"welcome welcome welcome welcome"
+                        "orar orar calendar-evenimente calendar-evenimente"
+                        "orar orar anunturi anunturi"
+                        "lista-utilizatori utilizator-statistici utilizator-statistici site-server"
+                        "promotii promotii promotii promotii";
+
+                        
+}
+html{
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+#grid-pagina>*{
+    border: 2px solid var(--culoare9);
+    padding: 1em;
+
+}
+#grid-pagina>figure{
+    margin:0
+}
+#welcome{
+    grid-area: welcome;
+}
+#promotii{
+    grid-area: promotii;
+}
+#anunturi{
+    grid-area: anunturi;
+}
+#orar{
+    grid-area: orar;
+}
+
+#calendar-evenimente{
+    grid-area: calendar-evenimente;
+}
+#anunturi{
+    grid-area: anunturi;
+}
+#lista-utilizatori{
+    grid-area: lista-utilizatori;
+}
+#utilizator-statistici{
+    grid-area: utilizator-statistici;
+}
+#site-server{
+    grid-area: site-server;
+}
+.intro-oferte{
+    font-size: 1.5rem;
+}
+.carte{
+    width: 50%;
+}
+
+.ifr-video{
+    width: 1200px;
+    max-width: 100%;
+    min-width: 50%;
+    height: auto;
+}
+.video{
+    display: flex;
+    justify-content: center;
+}
+.harta{
+    width: 600px;
+    max-width: 100%;
+    min-width: 50%;
+    height: 450px;
+}
+
+.video-vtt{
+    width: 600px;
+    height: auto;
+    min-width: 50%;
+    max-width: 100%;
+}
+#tab-orar {
+    position: relative; 
+}
+
+#program-evenimente {
+    position: absolute;
+    bottom: -18px; 
+    /*font-style: bold;*/
+    color: var(--culoare9); 
+    font-size: 10px; 
+}
+
+
+
+@media screen and (max-width:1200px){
+    
+    #grid-pagina{
+        gap: 10 px;
+        grid-gap: 5px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:"welcome welcome"
+                            "orar orar "
+                            "calendar-evenimente anunturi "
+                            "lista-utilizatori utilizator-statistici "
+                            "site-server site-server"
+                            "promotii promotii";
+    
+    } 
+    
+    html{
+        font-size: 14px;
+    }  
+    iframe[name="ifr-video"] {
+        width: 70%;
+        height: 100%;
+    }
+    .buton {
+        width: 50px; 
+        height: 30px; 
+        font-size: 14px; 
+    }
+    .harta{
+        width: 80%;
+        height: auto;
+    }
+    .video-vtt{
+        width: 80%;
+        height: auto;
+    }
+    
+}
+
+@media screen and (max-width:800px){
+    
+    html{
+        font-size: 12px;
+    }
+    #grid-pagina{
+        display:block;
+    }    
+    iframe[name="ifr-video"] {
+        width: 50%;
+        height: 100%;
+    }
+    .buton {
+        width: 20px; 
+        height: 15px; 
+        font-size: 10px; 
+    }
+    .harta{
+        width: 50%;
+        height: auto;
+    }
+    .video-vtt{
+        width: 50%;
+        height: auto;
+    }
+    .scroll{
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+    }
+    
+}
+
+
+
+
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html  lang="ro">
+    <head>
+    
+        
+        <meta name="keywords"
+            content="carte, povesti, transport curier, bestseller, manual, dictionare, Romania, biografii, review, carte copii, carte dezvoltare personale">
+        <meta name="description"
+            content="Magazin de carti. Carti, dictionare, manuale. Carti pentru copii, adolescenti, Carti de dezvoltare personala, Carti bestseller. Livrare la domiciliu">
+        <title>Produse magazin</title>
+        <%- include("../fragmente/head") %>     
+        <link href="/resurse/css/produs.css" type="text/css" rel="stylesheet" />
+
+    </head>
+    <body>
+    <%- include("../fragmente/header") %>
+
+    <main>
+        <section>
+            <h2>Pagină produs</h2>
+                <article id="art-produs">
+                    <h3><span class="nume"><%- locals.prod.nume %></span></h3>
+                    <p>Pret: <span class="pret"><%- locals.prod.pret %> </span></p>
+                    <p>Descriere: <span class="descriere"><%- locals.prod.descriere %> </span></p>
+                    <p>Autori: <span class="autori"><%- locals.prod.autori %> </span></p>
+                    <p>Tematica: <span class="tematica"><%- locals.prod.tematica %> </span></p>
+                    <p>Editura: <span class="editura"><%- locals.prod.editura %> </span></p>
+                    <p>Numar pagini: <span class="nr_pagini"><%- locals.prod.nr_pagini %> </span></p>
+                    <p>ISBN: <span class="isbn"><%- locals.prod.isbn %> </span></p>
+                    <p>Data adăugare: <span class="categorie"><%- locals.prod.data_adaugare %> </span></p>
+                    <p>Semn de carte: <span class="semn_carte"><%- locals.prod.semn_carte %> </span></p>
+                    <figure class="imag-produs">
+                        <img  src="/resurse/imagini/produse1/<%- locals.prod.imagine %>" alt="[imagine <%- locals.prod.nume %>]" />
+                    </figure>    
+                </article>
+            
+        </section>
+    </main>
+
+    <%- include("../fragmente/footer") %>
+    </body>
+</html>

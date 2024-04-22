@@ -1,0 +1,16 @@
+@use '../../node_modules/bootstrap/scss/bootstrap.scss' with 
+(
+    $primary:  #E44EA0,
+    $secondary: #F0C9DB,
+    $body-color: black,
+    $container-max-widths: (
+        md: 750px,
+        lg: 1000px,
+    ),
+    $border-radius: 8px,
+    $h1-font-size: 2.5rem, 
+    $h2-font-size: 2rem,
+    $font-family-base: "Montserrat",
+    $border-width: 4px,
+    $border-color: #E4D4DD
+)

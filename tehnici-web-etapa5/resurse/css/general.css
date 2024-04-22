@@ -1,0 +1,112 @@
+#link-top{
+    position:fixed;
+    bottom:0.3em;
+    opacity:0.5;
+    left:0.3em;
+    width:3rem;
+    box-sizing: border-box;
+    height:3rem;
+    line-height:3rem;
+    text-align:center;
+    border:3.5px dashed var(--culoare9);
+    border-radius:50%; 
+    transition: all 0.75s linear;
+    background: radial-gradient(circle, var(--culoare7), var(--culoare4), var(--culoare7));
+
+}
+#link-top:hover{
+   opacity:1;
+   transform: rotateZ(90deg);
+}
+#link-top:hover > #sageata {
+    transform: translateX(-0.3rem) rotateZ(-90deg);
+}
+
+#sageata{
+    height:100%;
+    width:100%;
+    font-size: 3rem;
+    color:var(--culoare9);
+    font-weight: bolder;
+    display:inline-block;
+    border: 0;
+    vertical-align: center;
+    transform: translateY(-0.3rem);
+    transition: all 0.75s linear;
+}
+
+#tab-orar{
+    border-style: inset;
+    border-width: 5px;
+    border-color: var(--culoare9);
+}
+
+#tab-orar td, #tab-orar th{
+    border: 1px solid var(--culoare9);
+
+}
+#tab-orar thead tr
+{
+    background-color: var(--culoare8);
+}
+#tab-orar tbody tr:nth-child(2n+1)
+{
+    background-color: var(--culoare4);
+}
+#tab-orar tbody tr:nth-child(2n)
+{
+    background-color: var(--culoare8);
+    
+}
+#tab-orar tfoot
+{
+    background-color: var(--culoare8);
+}
+
+#tab-orar tr:hover{
+    transition: outline 0.5s ease;
+    outline: 5px solid rgba(66, 30, 47, 0.7);
+    
+}
+
+
+.container-iframe {
+    display: flex;
+    flex-direction: column; 
+    width: 50%;
+    
+}
+.container-iframe iframe{
+    width:100%
+}
+.taburi-iframe {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+}
+
+.taburi-iframe a {
+    display: flex;
+    background-color: var(--culoare4);
+    padding: 0.2rem;
+    border: 2px solid var(--culoare9);
+    border-radius: 3px;
+    margin: 0 5px; 
+    text-decoration: none;
+   /* width: 120px;
+    height: 30px;*/
+    text-align: center;
+    box-shadow: 0px 5px 15px var(--culoare9);
+    transition: all 0.4s linear;
+    content: none;
+    
+}
+
+.taburi-iframe a:hover{
+    background-color: var(--culoare8);
+    
+}
+
+
+
+
